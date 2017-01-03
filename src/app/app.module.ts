@@ -7,11 +7,11 @@ import { HomePage } from '../pages/home/home';
 
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyDnXo3gy2cLF-WS7AByVaWhARgu_gPaj7A",
-  authDomain: "u4bi-crud-app.firebaseapp.com",
-  databaseURL: "https://u4bi-crud-app.firebaseio.com",
-  storageBucket: "u4bi-crud-app.appspot.com",
-  messagingSenderId: "328438803411"
+  apiKey: "AIzaSyAkviHEWDO0mAER7uihfu0AfRQIceC1v8s",
+  authDomain: "ionic-firebase-6a6e6.firebaseapp.com",
+  databaseURL: "https://ionic-firebase-6a6e6.firebaseio.com",
+  storageBucket: "ionic-firebase-6a6e6.appspot.com",
+  messagingSenderId: "150265599149"
 };
 
 @NgModule({
