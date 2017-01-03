@@ -54,7 +54,41 @@ export class HomePage {
   }
   
   updateUser(u){
-  
+    let updateUserModal = this.alertController.create({
+      title: 'edit user',
+      message: 'plz',
+      inputs: [
+        {
+          name : 'name',
+          placeholder: 'Name',
+          value: u.u_name
+        },
+        {
+          name: 'age',
+          placeholder: 'Age',
+          value: u.u_age
+        }
+      ],
+      buttons:[
+        {
+          text: 'exit',
+          handler: data =>{
+            console.log('exit');
+          }
+        },
+        {
+          text: 'Edit',
+          handler: data =>{
+            this.user.update( u.$key, {
+              u_name: data.name,
+              u_age: data.age
+            });
+          }
+        }
+      ]
+    });
+
+    updateUserModal.present(updateUserModal);
   }
 
   removeUser(user){
