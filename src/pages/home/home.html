@@ -16,9 +16,16 @@
    <ion-item-sliding *ngFor="let u of user | async">
      <ion-item>
        <ion-label>
-         {{u.u_name}}
+         <h2>{{u.u_name}}</h2>
+         <h3>{{u.u_age}}</h3>
+         
        </ion-label>
      </ion-item>
+     <ion-item-options>
+       <button ion-button danger (click)="removeUser(u)">
+       delete
+       </button>
+     </ion-item-options>
    </ion-item-sliding> 
   </ion-list>
 </ion-content>

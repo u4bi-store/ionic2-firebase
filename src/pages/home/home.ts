@@ -52,4 +52,8 @@ export class HomePage {
    
     newUserModal.present(newUserModal);
   }
+
+  removeUser(user){
+    this.user.remove(user);
+  }
 }
