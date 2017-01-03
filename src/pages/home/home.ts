@@ -52,6 +52,10 @@ export class HomePage {
    
     newUserModal.present(newUserModal);
   }
+  
+  updateUser(u){
+  
+  }
 
   removeUser(user){
     this.user.remove(user);
